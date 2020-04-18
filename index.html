@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="jquery.js"></script>
+    <script src="dijkstra.js"></script>
+    <title>Dijkstra Algorithm</title>
+</head>
+<body>
+    <header class="settings">
+        <div class="nav">
+            <h1 class="left-nav ptitle title">
+                Dijkstra
+            </h1>
+
+            <div class="middle-nav">
+                <button class="setting selected-set" onclick="Choice(0)">
+                    <i class="fa fa-plus"></i> Ajouter un sommet
+                </button>
+
+                <button class="setting" onclick="Choice(1)">
+                    <i class="fa fa-link"></i> Relier 2 sommets
+                </button>
+                
+                <button class="setting" onclick="Choice(2)">
+                    <i class="fa fa-close"></i> Supprimer un sommet
+                </button>
+
+                <button class="setting" onclick="Dijkstra(false)">
+                    Trouver le chemin le plus <br> court entre tous les sommets
+                </button>
+
+                <button class="setting" onclick="Dijkstra(true)">
+                    Trouver le chemin le plus <br> court entre 2 sommets
+                </button>
+            </div>
+
+            <div class="right-nav">
+                <button class="reset">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+    </div>
+</body>
+</html>
